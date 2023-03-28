@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class vucutkitleendeksi {
+   /* Java ile kullanıcıdan boy ve kilo değerlerini almayı bir değişkene atayın. Aşağıdaki formüle göre kullanıcıları "Vücut Kitle İndeks" değerini hesaplayıp ekranı yazdırın.
+
+    formülü
+    Kilo (kg) / Boy(m) * Boy(m)*/
+    public static void main(String[] args){
+        //değişken tanımla
+        double kilo,formul;
+        Scanner inp=new Scanner(System.in);
+        System.out.println("BOY UZUNLUĞUNU GİRİN:");
+        double boy = inp.nextDouble();
+        System.out.println("KİLO GİRİN:");
+        kilo=inp.nextDouble();
+        formul=kilo/(boy*boy);
+        System.out.println("vücut kitle endeksi:"+formul);
+    }
