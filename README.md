@@ -1,1 +1,0 @@
-# patika.dev-al-malar-
