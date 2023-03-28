@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class taksimetreprogrami {
+   // Taksimetre KM başına 2,20 TL tutmaktadır.
+  //  Asgari ödenecek tutar 20 TL'dir. 20 TL altında ki ücretlerde yine 20 TL alınacaktır.
+   // Taksimetre açılış ücreti 10 TL'dir.
+    public static void main(String[] args){
+        int km;
+        double taksimetre=2.20,toplam,ucret;
+        Scanner inp =new Scanner(System.in);
+        System.out.println("Gidilen mesafeyi girin:");
+        km=inp.nextInt();
+        toplam=(km*taksimetre);
+        int acilis=10;
+        ucret=toplam+acilis;
+        toplam=(toplam<20) ? 20 : toplam ;
+        System.out.println("ÖDENECEK ÜCRET:"+ucret);
+
+
+    }
+}
