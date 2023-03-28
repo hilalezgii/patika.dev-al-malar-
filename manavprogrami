@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class manav {
+   /* Java ile kullanıcıların manavdan edindiklerini öğrendikleri kilogram değerlerine göre toplam tutarlarını ekrana yazdıran programı yazın.
+
+    Meyveler ve KG Fiyatları
+
+    Armut : 2,14 TL
+    Elma : 3,67 TL
+    Domates : 1,11 TL
+    Müze: 0,95 TL
+    Patlıcan : 5,00 TL*/
+   public static void main(String[] args){
+       Scanner inp=new Scanner(System.in);
+       double armut=2.14,elma=3.67,domates=1.11,muz=0.95,patlican=5.0,a,e,d,m,p,toplam;
+       System.out.println("armut kaç kilo?");
+       a=inp.nextDouble();
+       System.out.println("elma kaç kilo?");
+       e= inp.nextDouble();
+       System.out.println("domates kaç kilo?");
+       d=inp.nextDouble();
+       System.out.println("muz kaç kilo?");
+       m=inp.nextDouble();
+       System.out.println("patlıcan kaç kilo?");
+       p=inp.nextDouble();
+       toplam=(a*armut)+(e*elma)+(d*domates)+(m*muz)+(p*patlican);
+       System.out.println("toplam sonuç:"+toplam);
+
+
+   }
+}
