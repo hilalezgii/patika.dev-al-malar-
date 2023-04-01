@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class hesapmakinesi {
+    public static void main(String[] args) {
+        //hesap makinesi programı
+        //değişkenleri tanımla
+        //verileri al
+        //switchcase ile devam et
+
+        double n1, n2;
+        int islem;
+        Scanner input = new Scanner(System.in);
+        System.out.println("ilk sayıyı giriniz:");
+        n1 = input.nextInt();
+        System.out.println("ikinci sayıyı girin:");
+        n2 = input.nextInt();
+        System.out.println("1-toplama\n2-çıkarma\n3-çarpma\n4-bölme");
+        System.out.println("seçim yapınız:");
+        islem=input.nextInt();
+        switch (islem) {
+            case (1):
+                System.out.println("sonuç:" + (n1 + n2));
+                break;
+            case (2):
+                System.out.println("sonuç:" + (n1 - n2));
+                break;
+            case (3):
+                System.out.println("sonuç:" + (n1 * n2));
+                break;
+            case (4):
+                if (n2 != 0) {
+                    System.out.println("sonuç:" + (n1 / n2));
+                } else {
+                    System.out.println("bir sayı 0 a bölünemez");
+                }
+                break;
+            default:
+                System.out.println("geçersiz işlem");
+
+        }
+    }
+}
