@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class kullanicigirisi {
+    //Eğer şifre yanlış ise kullanıcıya şifresini sıfırlayıp sıfırlamayacağını sorun
+    //eğer kullanıcı sıfırlamak isterse yeni girdiği şifrenin hatalı girdiği
+    // ve unuttuğu şifre ile aynı olmaması gerektiğini kontrol edip
+    //şifreler aynı ise ekrana "Şifre oluşturulamadı, lütfen başka şifre giriniz."
+    // sorun yoksa "Şifre oluşturuldu" yazan programı yazınız.
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        String kullaciciadi, sifre, yenisifre;
+        int secim;
+        System.out.println("kullanıcı adı giriniz:");
+        kullaciciadi = inp.next();
+        System.out.println("şifre girin:");
+        sifre = inp.next();
+        if (kullaciciadi.equals("patika") && sifre.equals("123456")) {
+            System.out.println("başarılı giriş yaptınız.");
+        } else if (kullaciciadi.equals("patika") && !sifre.equals("123456")) {
+            System.out.println("şifre hatalı");
+            System.out.println("şifrenizi sıfırlamak istiyor musunuz istiyorsanız 1 istemiyorsanız 2 yi tuşlayın.");
+            secim = inp.nextInt();
+            switch (secim) {
+                case 1:
+                    System.out.println("yeni şifre giriniz:");
+                    yenisifre = inp.next();
+                    if (yenisifre.equals("yenisifre") || yenisifre.equals("123456"))
+                {
+                    System.out.println("şifre oluşturulamadı lütfen başka şifre girin");
+                }
+            else{
+                    System.out.println("şifre oluşturuldu");
+                }
+                break;
+                case 2:
+                    System.out.println("işleminiz sonlandırıldı");
+                    break;
+            }
+        } else {
+            System.out.println("kullanıcı adı ve şifre hatalı");
+        }
+    }
+}
