@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class siralama {
+    public static void main(String[] args) {
+     //   Girilen 3 sayıyı "küçükten büyüğe" sıralayan programı yazınız.
+
+        //önce üç sayıyı tanımla
+        int sayi1,sayi2,sayi3;
+        Scanner inp=new Scanner(System.in);
+        System.out.println("İLK SAYIYI GİRİN:");
+        sayi1= inp.nextInt();
+        System.out.println("İKİNCİ SAYIYI GİRİN:");
+        sayi2= inp.nextInt();
+        System.out.println("ÜÇÜNCÜ SAYIYI GİRİN:");
+        sayi3=inp.nextInt();
+        if (sayi1>sayi2&&sayi1>sayi3) {
+            if (sayi2 > sayi3) {
+                System.out.println("a>b>c");
+            } else {
+                System.out.println("a>c>b");
+            }
+
+        } else if (sayi2>sayi1&&sayi2>sayi3) {
+            if (sayi1 > sayi3) {
+                System.out.println("b>a>c");
+            } else {
+                System.out.println("b>c>a");
+            }
+        } else {
+            if (sayi1 > sayi2) {
+                System.out.println("c>a>b");
+            }
+         else {
+                    System.out.println("c>b>a");
+                }
+            }
+    }
+}
