@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ciftsayiortalamasi {
+    //Java döngüler ile 0'dan girilen sayıya kadar olan sayılardan
+      //      3 ve 4'e tam bölünen sayıların ortalamasını hesaplayan programı yazınız.
+    public static void main(String[] args) {
+        int i,toplam=0,sayi=0;
+        double ortalama;
+        Scanner inp=new Scanner(System.in);
+        System.out.println("BİR SAYI GİRİN:");
+        i=inp.nextInt();
+        for(int k = 1;k<=i;k++){
+            if (k%3==0&&k%4==0){
+                System.out.println(k);
+                toplam+=k;
+                sayi++;
+            }
+        }
+        ortalama=toplam/sayi;
+        System.out.println("ortalamanız:"+ortalama);
+
+    }
+}
