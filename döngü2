@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class teksayi {
+    //Java döngüler ile tek bir sayı girilene kadar kullanıcıdan girişleri kabul eden ve
+    //girilen değerlerden çift ve 4'ün katları olan sayıları toplayıp ekrana basan programı yazıyoruz.
+    public static void main(String[] args) {
+        int x,toplam=0;
+        Scanner inp=new Scanner(System.in);
+
+
+        do {
+            System.out.println("BİR SAYI GİRİN:");
+            x=inp.nextInt();
+            if ((x % 4 == 0)){
+                toplam+=x;
+            }
+        }
+        while (x%2==0);
+            System.out.println("çift ve 4'ün katları olan sayıların toplamı:"+toplam);
