@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class yeni {
+    /*Java ile kullanıcının girdiği değerler ile üslü sayı hesaplayan programı "For Döngüsü" kullanarak yapınız.
+     */
+
+    public static void main(String[] args) {
+        Scanner inp =new Scanner(System.in);
+        int n,r;
+        System.out.println("üssü alınacak sayı :");
+        n=inp.nextInt();
+        System.out.println("üssün kuvveti:");
+        r=inp.nextInt();
+        //üs n r kadar çarpılır
+        int sonuc=1;
+        for (int i=1;i<=r;i++){
+            sonuc*=n;
+        }
+        System.out.println("sonuç:"+sonuc);
