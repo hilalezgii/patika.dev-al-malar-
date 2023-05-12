@@ -1,0 +1,26 @@
+public class Main {
+    static boolean isPalindrom(int number){
+        int temp=number,reversenumber=0,lastnumber;
+        while (temp!=0){
+            lastnumber=temp%10;
+            System.out.println("sayi:"+temp);
+            System.out.println("son basamak:"+lastnumber);
+
+            reversenumber=(reversenumber*10)+lastnumber;
+            System.out.println("yeni sayi:"+reversenumber);
+
+            temp/=10;
+            System.out.println("yeni temp:"+temp);
+
+        }
+        if (number==reversenumber){
+           return true;
+        }
+        else
+            return false;
+   }
+   public static void main(String[] args){
+
+       System.out.println(isPalindrom());
+   }
+}
