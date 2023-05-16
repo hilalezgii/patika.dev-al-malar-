@@ -1,0 +1,106 @@
+import java.util.Scanner;
+
+public class Main {
+   static int sum(int a,int b){
+      int result=a+b;
+      System.out.println("toplam:"+result);
+      return result;
+   }
+   static int min(int a,int b){
+      int result=a-b;
+      System.out.println("fark:"+result);
+      return result;
+   }
+   static int times(int a,int b){
+      int result=a*b;
+      System.out.println("çarpım:"+result);
+      return result;
+   }
+   static int divided(int a,int b){
+      int result=a/b;
+      if (b==0){
+         System.out.println("sayı 0 a bölünemez");
+      }
+      System.out.println("bölüm:"+result);
+      return result;
+   }
+   static int power(int a, int b) {
+      int result = 1;
+      for (int i = 0; i <= b; i++) {
+         result *= a;
+      }
+      return result;
+   }
+   static int mod(int a,int b){
+      int result=a%b;
+      System.out.println("kalan:"+result);
+      return result;
+   }
+   static int calc(int a,int b){
+      int result=2*(a+b);
+      System.out.println("çevre:"+result);
+      return result;
+   }
+   static int area(int a,int b){
+      int result=a*b;
+      System.out.println("alan:"+result);
+      return result;
+   }
+   public static void main(String[] args) {
+      Scanner scan=new Scanner(System.in);
+      int select;
+      String menu="1-toplama işlemi\n"
+              +"2-çıkarma işlemi \n"
+              +"3-çarpma işlemi\n"
+              +"4-bölme işlemi\n"
+              +"5-üs alma\n"
+              +"6-mod alma\n"
+              +"7-çevre hesabı\n"
+              +"8-alan hesabı\n"
+              +"0-çıkış yap\n";
+      while (true){
+         System.out.println(menu);
+         System.out.println("bir seçim yapınız:");
+         select=scan.nextInt();
+         if (select == 0){
+            break;
+         }
+         System.out.println("ilk sayıyı girin:");
+         int a=scan.nextInt();
+         System.out.println("ikinci sayıyı girin:");
+         int b=scan.nextInt();
+         switch (select){
+            case 1:
+               sum(a,b);
+            break;
+            case 2:
+               min(a,b);
+            break;
+            case 3:
+               times(a,b);
+            break;
+            case 4:
+               divided(a,b);
+            break;
+            case 5:
+               power(a,b);
+            break;
+            case 6:
+               mod(a,b);
+            break;
+            case 7:
+               calc(a,b);
+            break;
+            case 8:
+               area(a,b);
+            break;
+         }
+
+      }
+
+
+
+
+   }
+
+   }
