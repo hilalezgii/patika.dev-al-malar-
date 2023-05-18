@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class üs {
+    static int üs(){
+        Scanner scan=new Scanner(System.in);
+        System.out.println("taban değerini girin:");
+        int base=scan.nextInt();
+        System.out.println("üs değerini girin:");
+        int exponent=scan.nextInt();
+        if (exponent==0){
+            return 1;
+        }
+        int result=1;
+        for (int i=0;i<=exponent;i++){
+            result*=base;
+        }
+        return result;
+    }
+    public static void main(String[] args) {
+        System.out.println("sonuç:"+üs());
+
+
+    }
+}
