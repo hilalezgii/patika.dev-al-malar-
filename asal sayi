@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class asalsayi {
+static int asalsayi(){
+        Scanner scan=new Scanner(System.in);
+        System.out.println("bir sayı girin:");
+        int number=scan.nextInt();
+        int result=0;
+        for (int i=2;i<number;i++){
+            if (number%i==0){
+               result++;
+            }
+        }
+        if (result!=0){
+            System.out.println("girilen sayı asal sayı değildir!");
+        }
+        else{
+            System.out.println("girilen sayı asal sayıdır!");
+        }
+        return result;
+    }
+    public static void main(String[] args) {
+        System.out.println(asalsayi());
+
+    }
+}
