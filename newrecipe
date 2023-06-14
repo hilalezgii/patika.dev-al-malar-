@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni Tarif</title>
+</head>
+
+<body style="background-color: bisque;">
+    <!--head başlangıç-->
+    <h1 style="color: cornflowerblue;"><em><strong>...Kuru Fasulye Tarifi...</strong></em></h1>
+    <p style="color: darkslategray;"><em> <strong>Kullandığınız fasulyenin cinsine göre suda bekletme işlemini kısa bir
+                süreyle sınırlayabilirsiniz.</strong></em></p>
+    <p><strong>Tarif:</strong>Gül'ün Mutfağı</p>
+    <img src="https://i.lezzet.com.tr/images-xxlarge/kuru-fasulye-d36f8864-84aa-45b1-bc06-08d08d082044" style="width: 80%; margin: 0 10%; max-height: 35%;" alt="kuru fasulye resmi">
+    <p style="text-align: center;">
+        <u><span style="color:dodgerblue;">Kaç Kişilik: </span>4</u>
+        <br>
+        <u><span style="color: dodgerblue;">Hazırlama Süresi: </span>15 dk </u>
+        <br>
+        <u><span style="color: dodgerblue;">Pişirme Süresi: </span>45 dk</u>
+    </p><!--malzemeler-->
+    <h4 style="text-align: center;"><span style="color: dodgerblue;"><span
+                style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Tarif İçin
+                Malzemeler:</span></span></h4>
+    <div style="margin-left:35%;">
+        <ul>
+            <li>2 su bardağı kuru fasulye</1i>
+            <li>1 adet orta boy kuru soğan</1i>
+            <li>2 yemek kaşığı tereyağı</1i>
+            <li>2 diş sarımsak</1i>
+            <li>1 adet yeşil biber</1i>
+            <li>1 adet kırmızı biber</1i>
+            <li>1,5 yemek kaşığı domates salçası</1i>
+            <li>1 tatlı kaşığı biber salçası</1i>
+            <li>Yeterince tuz</1i>
+            <li>Karabiber</1i>
+            <li>Kekik</1i>
+            <li>Pul biber</li>
+        </ul>
+    </div>
+    <!--hazırlanışı-->
+    <h4 style="text-align: center;color:dodgerblue;"><span style="color:dodgerblue;"><span
+                style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Hazırlanışı:</span></span>
+    </h4>
+    <div style="margin-left:35%;">
+        <ol>
+            <li>Fasulyelere üzerlerini geçecek kadar su ilave edip 20 dk kadar kaynatalım.</li>
+            <li>Kaynarken üzeride biriken köpüğü kaşıkla alıp atıyoruz.</li>
+            <li>Diğer tarafta tereyağını tencereye alalım eriyince soğanı ve sarımsağı ilave edip karıştıralım.</li>
+            <li>Soğanlar kavrulunca içine biberleri ekleyelim ve karıştıralım.</li>
+            <li>Biberlerde kavrulunca salçaları ekleyip iyice kavuralım.</li>
+            <li>Haşladığımız fasulyenin suyunu süzüp tencereye ilave edelim.</li>
+            <li>Üzerine tuzu ve baharatları ekleyip sıcak su ilave edelim.</li>
+            <li>Fasulyenin cinsine göre pişme süresi değişebilir.</li>
+            <li>Suyunu çektiği halde pişmezse sıcak su ilave edin.</li>
+            <li>Tuz ve baharat dengesini ayarlayın.</li>
+            <li>Fasulyeler yumuşayana kadar pişirelim. Afiyet olsun ♥️.</li>
+        </ol>
+    </div>
+</body>
+
+</html
